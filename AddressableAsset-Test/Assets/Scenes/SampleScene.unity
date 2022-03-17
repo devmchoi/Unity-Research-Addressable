@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 277939555}
   - component: {fileID: 277939554}
+  - component: {fileID: 277939556}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -152,36 +153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba8c1b805a914162b85cfbcefb5ea6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  assetReference:
-    m_AssetGUID: 
-    m_SubObjectName: 
-    m_SubObjectType: 
-  assetReferenceAudioClip:
-    m_AssetGUID: 
-    m_SubObjectName: 
-    m_SubObjectType: 
-  assetReferenceGameObject:
-    m_AssetGUID: 
-    m_SubObjectName: 
-    m_SubObjectType: 
-  assetReferenceSprite:
-    m_AssetGUID: 
-    m_SubObjectName: 
-    m_SubObjectType: 
-  assetReferenceAtlasedSprite:
-    m_AssetGUID: 
-    m_SubObjectName: 
-    m_SubObjectType: 
-  assetLabelReference:
-    m_LabelString: 
-  assetReferenceTexture:
-    m_AssetGUID: 
-    m_SubObjectName: 
-    m_SubObjectType: 
-  assetReferenceTexture2D:
-    m_AssetGUID: 
-    m_SubObjectName: 
-    m_SubObjectType: 
 --- !u!4 &277939555
 Transform:
   m_ObjectHideFlags: 0
@@ -196,6 +167,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &277939556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277939553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aef808ca3cf5548778b801323bcb7683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

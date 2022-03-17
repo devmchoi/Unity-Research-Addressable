@@ -3,10 +3,355 @@
 	{
 		"selected_items":
 		[
+			[
+				"Seri",
+				"SerializeField"
+			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"contents": "public virtual AsyncOperationHandle<TObject> LoadAssetAsync<TObject> ();\npublic virtual AsyncOperationHandle<SceneInstance> LoadSceneAsync (LoadSceneMode loadMode = 0, bool activateOnLoad = true, int priority = 100);\npublic virtual AsyncOperationHandle<SceneInstance> UnLoadScene ();\npublic virtual AsyncOperationHandle<GameObject> InstantiateAsync (Vector3 position, Quaternion rotation, Transform parent = null);\npublic virtual AsyncOperationHandle<GameObject> InstantiateAsync (Transform parent = null, bool instantiateInWorldSpace = false);\n\npublic virtual bool RuntimeKeyIsValid ();\npublic virtual void ReleaseAsset ();\npublic virtual void ReleaseInstance (GameObject obj);\npublic virtual bool ValidateAsset (Object obj);\npublic virtual bool ValidateAsset (string path);\npublic virtual bool SetEditorAsset (Object value);\npublic virtual bool SetEditorSubObject (Object value);\n\npublic virtual AsyncOperationHandle<TObject> LoadAssetAsync<TObject> ();",
+			"settings":
+			{
+				"buffer_size": 955,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAACQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					1,
+					"insert",
+					{
+						"characters": "<>"
+					},
+					"AgAAAAkAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAALAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACQAAAAAAAAAJAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "\n\n\n"
+					},
+					"AwAAAAsAAAAAAAAADAAAAAAAAAAAAAAADAAAAAAAAAANAAAAAAAAAAAAAAANAAAAAAAAAA4AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACwAAAAAAAAALAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					2,
+					"left_delete",
+					null,
+					"AgAAAA0AAAAAAAAADQAAAAAAAAABAAAACgwAAAAAAAAADAAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAADgAAAAAAAAAOAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": "LoadScene"
+					},
+					"CQAAAAwAAAAAAAAADQAAAAAAAAAAAAAADQAAAAAAAAAOAAAAAAAAAAAAAAAOAAAAAAAAAA8AAAAAAAAAAAAAAA8AAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAARAAAAAAAAAAAAAAARAAAAAAAAABIAAAAAAAAAAAAAABIAAAAAAAAAEwAAAAAAAAAAAAAAEwAAAAAAAAAUAAAAAAAAAAAAAAAUAAAAAAAAABUAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADAAAAAAAAAAMAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAABUAAAAAAAAAFgAAAAAAAAAAAAAAFgAAAAAAAAAXAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAFQAAAAAAAAAVAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"paste",
+					null,
+					"AQAAABYAAAAAAAAAIQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAFgAAAAAAAAAWAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAACEAAAAAAAAAIgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIQAAAAAAAAAhAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"paste",
+					null,
+					"AQAAACMAAAAAAAAALgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIwAAAAAAAAAjAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"left_delete",
+					null,
+					"AQAAACEAAAAAAAAAIQAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAQFNA"
+				],
+				[
+					20,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAC0AAAAAAAAALgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALQAAAAAAAAAtAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"paste",
+					null,
+					"AQAAAC4AAAAAAAAAPAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALgAAAAAAAAAuAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"insert",
+					{
+						"characters": "<>"
+					},
+					"AgAAADwAAAAAAAAAPQAAAAAAAAAAAAAAPQAAAAAAAAA+AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAPAAAAAAAAAA8AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					23,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAD4AAAAAAAAAPwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAPgAAAAAAAAA+AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAD8AAAAAAAAAQAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAPwAAAAAAAAA/AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					29,
+					1,
+					"paste",
+					null,
+					"AQAAAEAAAAAAAAAASwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					30,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAEsAAAAAAAAATQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAASwAAAAAAAABLAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAE0AAAAAAAAATgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAATQAAAAAAAABNAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					40,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAABOAAAATG9hZEFzc2V0PD4KTG9hZFNjZW5lCkluc3RhbnRpYXRlCkluc3RhbnRpYXRlCkxvYWRBc3NldEFzeW5jPD4KClVuTG9hZFNjZW5lKCkK",
+					"AQAAAAAAAAABAAAAAAAAAAAAAABOAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					43,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAiAMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					45,
+					1,
+					"unindent",
+					null,
+					"DAAAAAEAAAAAAAAAAQAAAAAAAAABAAAACUsAAAAAAAAASwAAAAAAAAABAAAACdwAAAAAAAAA3AAAAAAAAAABAAAACSABAAAAAAAAIAEAAAAAAAABAAAACaQBAAAAAAAApAEAAAAAAAABAAAACScCAAAAAAAAJwIAAAAAAAABAAAACVICAAAAAAAAUgIAAAAAAAABAAAACXgCAAAAAAAAeAIAAAAAAAABAAAACa8CAAAAAAAArwIAAAAAAAABAAAACeACAAAAAAAA4AIAAAAAAAABAAAACRIDAAAAAAAAEgMAAAAAAAABAAAACUYDAAAAAAAARgMAAAAAAAABAAAACQ",
+					"AQAAAAAAAAABAAAAiAMAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					47,
+					1,
+					"cut",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					65,
+					1,
+					"cut",
+					null,
+					"AQAAAEkAAAAAAAAASQAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAASQAAAAAAAABJAAAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					67,
+					1,
+					"cut",
+					null,
+					"AQAAANkAAAAAAAAA2QAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAA2QAAAAAAAADZAAAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					69,
+					1,
+					"cut",
+					null,
+					"AQAAABwBAAAAAAAAHAEAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAHAEAAAAAAAAcAQAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					71,
+					1,
+					"cut",
+					null,
+					"AQAAAJ8BAAAAAAAAnwEAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAnwEAAAAAAACfAQAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					73,
+					1,
+					"cut",
+					null,
+					"AQAAACECAAAAAAAAIQIAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAIQIAAAAAAAAhAgAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					75,
+					1,
+					"cut",
+					null,
+					"AQAAAEsCAAAAAAAASwIAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAASwIAAAAAAABLAgAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					77,
+					1,
+					"cut",
+					null,
+					"AQAAAHACAAAAAAAAcAIAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAcAIAAAAAAABwAgAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					79,
+					1,
+					"cut",
+					null,
+					"AQAAAKYCAAAAAAAApgIAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAApgIAAAAAAACmAgAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					81,
+					1,
+					"cut",
+					null,
+					"AQAAANYCAAAAAAAA1gIAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAA1gIAAAAAAADWAgAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					83,
+					1,
+					"cut",
+					null,
+					"AQAAAAcDAAAAAAAABwMAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAABwMAAAAAAAAHAwAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					85,
+					1,
+					"cut",
+					null,
+					"AQAAADoDAAAAAAAAOgMAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAOgMAAAAAAAA6AwAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					99,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAACACAAAAAAAAIQIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIAIAAAAAAAAgAgAAAAAAAP///////+9/"
+				],
+				[
+					171,
+					1,
+					"insert",
+					{
+						"characters": "\n\n\n"
+					},
+					"AwAAAHEDAAAAAAAAcgMAAAAAAAAAAAAAcgMAAAAAAABzAwAAAAAAAAAAAABzAwAAAAAAAHQDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcQMAAAAAAABxAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					172,
+					1,
+					"paste",
+					null,
+					"AQAAAHQDAAAAAAAAvgMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAdAMAAAAAAAB0AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					173,
+					1,
+					"unindent",
+					null,
+					"AQAAAHUDAAAAAAAAdQMAAAAAAAABAAAACQ",
+					"AQAAAAAAAAABAAAAvgMAAAAAAAC+AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					192,
+					2,
+					"left_delete",
+					null,
+					"AgAAAHMDAAAAAAAAcwMAAAAAAAABAAAACnIDAAAAAAAAcgMAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAdAMAAAAAAAB0AwAAAAAAAAAAAAAAgH9A"
+				]
+			]
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -40,10 +385,13 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/brianchoi/VCS/AddressableAsset-Test"
+		"/Users/brianchoi/VCS/Unity3D-Research-Addressable/AddressableAsset-Test"
 	],
 	"file_history":
 	[
+		"/Users/brianchoi/VCS/AddressableAsset-Test/Assets/Scripts/AddressableAssetManager.cs",
+		"/Users/brianchoi/Desktop/스크럼.md",
+		"/Users/brianchoi/VCS/Research-Unity-Addressable/ReadMe.md",
 		"/Users/brianchoi/VCS/IsnaraLib/isnaraLib/isnaraLib/isnaraLib/Network/WebNetwork/iWebNetwork.cs",
 		"/Users/brianchoi/VCS/IsnaraLib/isnaraLib/isnaraLib/isnaraLib/UI/IUITools.cs",
 		"/Users/brianchoi/VCS/IsnaraLib/isnaraLib/isnaraLib_Unity/Assets/IsnaraLib Examples/Examples/ExamplesResourceManager.cs",
@@ -68,7 +416,7 @@
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -82,6 +430,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"private",
+			"OnAsyncOperationHandle_Completed"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -101,7 +451,7 @@
 	"folders":
 	[
 		{
-			"path": "/Users/brianchoi/VCS/AddressableAsset-Test"
+			"path": "/Users/brianchoi/VCS/Unity3D-Research-Addressable/AddressableAsset-Test"
 		}
 	],
 	"groups":
@@ -109,12 +459,43 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 955,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								882,
+								882
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -151,7 +532,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 44.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -160,6 +541,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"AddressableAssetmanager.cs",
+				"Assets/Scripts/AddressableAssetManager.cs"
+			],
 			[
 				"iuito",
 				"isnaraLib/isnaraLib/isnaraLib/UI/IUITools.cs"
@@ -280,7 +665,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 332.0,
 	"status_bar_visible": true,
 	"template_settings":

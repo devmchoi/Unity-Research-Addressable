@@ -193,40 +193,39 @@ public class AssetReference : IKeyEvaluator
     }
 
     // Addressalbes.InstantiateAsync로 생성된 함수는 반드시 Addressables.ReleaseInstance로 해제해준다.
-    // GameObject.Instantiate(...)로 생성된 게임오브젝트는 어드레서블로 해제할 수 없으니 GameObject.Destroy('object')를 사용한다.
+    // GameObject.Instantiate(...)로 생성된 GameObject는 어드레서블로 해제할 수 없으니 GameObject.Destroy('object')를 사용한다.
 
-	// Addressables.ReleaseAsset('AsyncOperationHandle' 또는 'object') 			 <-> Addressables.LoadAssetsAsync
-	// Addressables.ReleaseInstance('AsyncOperationHandle' 또는 'object') 		 <-> Addressalbes.InstantiateAsync
-	// Addressables.UnloadSceneAsync('AsyncOperationHandle' 또는 'SceneIsntance') <-> Addressables.LoadSceneAysnc
-	// 
-	// AssetReference.ReleaseAsset() 	<-> AssetReference.LoadAssetAsync()
-	// AssetReference.ReleaseInstance() <-> AssetReference.InstantiateAsync()
-	// AssetReference.UnLoadScene() 	<-> AssetReference.LoadSceneAsync()
+	// Addressables.LoadAssetsAsync 		<-> Addressables.ReleaseAsset('AsyncOperationHandle' 또는 'object')
+	// Addressalbes.InstantiateAsync 		<-> Addressables.ReleaseInstance('AsyncOperationHandle' 또는 'object')
+	// Addressables.LoadSceneAysnc 			<-> Addressables.UnloadSceneAsync('AsyncOperationHandle' 또는 'SceneIsntance')
+	// AssetReference.LoadAssetAsync() 		<-> AssetReference.ReleaseAsset()
+	// AssetReference.InstantiateAsync() 	<-> AssetReference.ReleaseInstance()
+	// AssetReference.LoadSceneAsync() 		<-> AssetReference.UnLoadScene()
 
 	// 에셋번들의 파일명. 에셋번들 파일의 이름은 '에셋그룹 명 + hash값'으로 구성된다. 
 	// hash값으로 변경을 감지하고 버전을 체크한다.
 	// 디폴트 : [UnityEditor.EditorUserBuildSettings.activeBuildTarget]
+
+	// [SerializeField]		
+    // private AssetReference assetReference;
+	// [SerializeField]	
+    // private AssetReferenceAudioClip assetReferenceAudioClip;
+	// [SerializeField]	
+    // private AssetReferenceGameObject assetReferenceGameObject;
+	// [SerializeField]	
+    // private AssetReferenceSprite assetReferenceSprite;
+	// [SerializeField]	
+    // private AssetReferenceAtlasedSprite assetReferenceAtlasedSprite;
+	// [SerializeField]	
+    // private AssetLabelReference assetLabelReference;
+	// [SerializeField]	
+    // private AssetReferenceTexture assetReferenceTexture;
+	// [SerializeField]	
+    // private AssetReferenceTexture2D assetReferenceTexture2D;
  */ 
 
 public class AddressableAssetManager : MonoBehaviour
 {
-	[SerializeField]		
-    private AssetReference assetReference;
-	[SerializeField]	
-    private AssetReferenceAudioClip assetReferenceAudioClip;
-	[SerializeField]	
-    private AssetReferenceGameObject assetReferenceGameObject;
-	[SerializeField]	
-    private AssetReferenceSprite assetReferenceSprite;
-	[SerializeField]	
-    private AssetReferenceAtlasedSprite assetReferenceAtlasedSprite;
-	[SerializeField]	
-    private AssetLabelReference assetLabelReference;
-	[SerializeField]	
-    private AssetReferenceTexture assetReferenceTexture;
-	[SerializeField]	
-    private AssetReferenceTexture2D assetReferenceTexture2D;
-
     private bool m_bIsInitialized = false;
 
     public void Initialize()
@@ -244,12 +243,49 @@ public class AddressableAssetManager : MonoBehaviour
     private void OnAsyncOperationHandleCompleted(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<UnityEngine.AddressableAssets.ResourceLocators.IResourceLocator> obj)
     {
         m_bIsInitialized = true;
-
-		assetReferenceAudioClip.ReleaseAsset();
 	}
 
 
-#if UNITY_EDITOR
-	
-#endif
+
+	public void Test()
+    {
+    	/*
+		UnityEngine.AddressableAssets.ResourceLocators.IResourceLocator
+		UnityEngine.ResourceManagement.ResourceLocations.IResourceLocation
+
+		Addressables.LoadAssetAsync<TObject> (IResourceLocation location);
+		Addressables.LoadAssetAsync<TObject> (object key);
+
+		Addressables.LoadResourceLocationsAsync (IEnumerable keys, MergeMode mode, Type type = null);
+		Addressables.LoadResourceLocationsAsync (object key, Type type = null);
+
+		Addressables.Release<TObject> (TObject obj);
+		Addressables.Release<TObject> (AsyncOperationHandle<TObject> handle);
+		Addressables.Release (AsyncOperationHandle handle);
+		Addressables.ReleaseInstance (GameObject instance);
+		Addressables.ReleaseInstance (AsyncOperationHandle handle);
+		Addressables.ReleaseInstance (AsyncOperationHandle<GameObject> handle);
+
+		Addressables.GetDownloadSizeAsync(...string);
+		Addressables.GetDownloadSizeAsync(...object);
+		Addressables.GetDownloadSizeAsync(...IEnumerable);
+
+		Addressables.DownloadDependenciesAsync(object, bool);
+		Addressables.ClearDependencyCacheAsync(object);
+
+		Addressables.AsyncOperationHandle<GameObject> InstantiateAsync (IResourceLocation location, Transform parent = null, bool instantiateInWorldSpace = false, bool trackHandle = true);
+		Addressables.AsyncOperationHandle<GameObject> InstantiateAsync (IResourceLocation location, Vector3 position, Quaternion rotation, Transform parent = null, bool trackHandle = true);
+		Addressables.AsyncOperationHandle<GameObject> InstantiateAsync (object key, Transform parent = null, bool instantiateInWorldSpace = false, bool trackHandle = true);
+		Addressables.AsyncOperationHandle<GameObject> InstantiateAsync (object key, Vector3 position, Quaternion rotation, Transform parent = null, bool trackHandle = true);
+		Addressables.AsyncOperationHandle<GameObject> InstantiateAsync (object key, InstantiationParameters instantiateParameters, bool trackHandle = true);
+		Addressables.AsyncOperationHandle<GameObject> InstantiateAsync (IResourceLocation location, InstantiationParameters instantiateParameters, bool trackHandle = true);
+
+		Addressables.AsyncOperationHandle<SceneInstance> LoadSceneAsync (object key, LoadSceneMode loadMode = 0, bool activateOnLoad = true, int priority = 100);
+		Addressables.AsyncOperationHandle<SceneInstance> LoadSceneAsync (IResourceLocation location, LoadSceneMode loadMode = 0, bool activateOnLoad = true, int priority = 100);
+
+		Addressables.AsyncOperationHandle<SceneInstance> UnloadSceneAsync (SceneInstance scene, bool autoReleaseHandle = true);
+		Addressables.AsyncOperationHandle<SceneInstance> UnloadSceneAsync (AsyncOperationHandle handle, bool autoReleaseHandle = true);
+		Addressables.AsyncOperationHandle<SceneInstance> UnloadSceneAsync (AsyncOperationHandle<SceneInstance> handle, bool autoReleaseHandle = true);
+		*/
+	}
 }

@@ -20,9 +20,10 @@ MonoBehaviour:
   - m_GUID: 8c9f639bfe17746b084d4d47649fff0f
     m_Address: Assets/GameObject.prefab
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
+    m_MainAsset: {fileID: 502489650857978297, guid: 8c9f639bfe17746b084d4d47649fff0f, type: 3}
+    m_TargetAsset: {fileID: 502489650857978297, guid: 8c9f639bfe17746b084d4d47649fff0f, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: eb6abe45c52a2402e8e3c29a58861f4d, type: 2}
   m_SchemaSet:

@@ -1,7 +1,9 @@
 ﻿<Properties StartupConfiguration="{4BF938D4-405D-C780-B5EF-510721EC7CCF}|">
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Assets/Scripts/NewMonoBehaviour.cs" Line="5" Column="15" />
+      <File FileName="Assets/Scripts/AddressableAssets.cs" Line="7" Column="2" />
+      <File FileName="Assets/Scripts/TestAddressableAssetManager.cs" Line="13" Column="2" />
+      <File FileName="Assets/Scripts/AddressableAssetManager.cs" Line="29" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,7 +11,7 @@
           <Node name="AddressableAsset-Test" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="AddressableAssetManager.cs" selected="True" />
+                <Node name="AddressableAssets.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -19,7 +21,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3e50d14d-5b69-42a4-8cec-a3dd1714bb33" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e2e01baf-54b1-43df-b27d-73b6ffd991e8" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

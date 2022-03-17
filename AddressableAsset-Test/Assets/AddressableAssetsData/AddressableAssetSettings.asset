@@ -54,14 +54,14 @@ MonoBehaviour:
         m_Value: http://localhost/[BuildTarget]
     - m_InheritedParent: 
       m_Id: fe7e00e09d79045c2ac6476d147a8683
-      m_ProfileName: New Profile
+      m_ProfileName: Prod
       m_Values:
       - m_Id: d8c55179ebd934f40aff420085c72c66
-        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget2]'
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: fe5425e50232342208ea24349a9e5766
-        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget2]'
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
       - m_Id: 71af29951971f42acbe940ac3118db65
-        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget2]'
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: 9946af7e57ec346bea641ab3c0af590b
         m_Value: ServerData/[BuildTarget]
       - m_Id: 3429b33606cb24da2953efd0153cb556
@@ -86,6 +86,7 @@ MonoBehaviour:
   m_LabelTable:
     m_LabelNames:
     - default
+    - helloworld
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: c88c67b2532634de08c628f8171a0e80, type: 2}
@@ -99,7 +100,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 07afd2cc3fd02477bbc32c64c05f124c, type: 2}
   - {fileID: 11400000, guid: 40c91118dce384054b74141a39d2d523, type: 2}
   - {fileID: 11400000, guid: d49047bcc5001420f99588f9aae27758, type: 2}
-  m_ActiveProfileId: 1f17de30899c04ffdb6c8b4e015f545a
+  m_ActiveProfileId: fe7e00e09d79045c2ac6476d147a8683
   m_HostingServicesManager:
     m_HostingServiceInfos: []
     m_Settings: {fileID: 11400000}
